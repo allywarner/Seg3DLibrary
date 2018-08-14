@@ -21,3 +21,24 @@ $RECYCLE.BIN/
 # =========================
 # Operating System Files
 # =========================
+
+*.pdb
+*.ilk
+*.exe
+*.idb
+*.swp
+*.vcxproj*
+*DS_Store
+bin*
+*.dylib
+*.so
+*.a
+*.*~
+CMakeCache.txt
+CMakeFiles
+Makefile
+cmake_install.cmake
+install_manifest.txt
+CTestTestfile.cmake
+DartConfiguration.tcl
+lib_bin
