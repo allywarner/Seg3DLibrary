@@ -63,7 +63,23 @@ SET(PHILIPS_MAIN_SRCS
 
 ADD_EXECUTABLE(philips ${PHILIPS_MAIN_SRCS})
 
+###########################################
+#Add path to Seg3D lib file
+###########################################
+
+SET(PHILIPS_LIB "C:/SgbinNoPyR/Seg3D/Main/Philips/Lib/Release/philips_lib.lib")
+
+###########################################
+#Required libraries
+###########################################
+
+FIND_PACKAGE(OpenGL REQUIRED)
+
 TARGET_LINK_LIBRARIES(philips
-  #philips_lib
+  ${PHILIPS_LIB}
+  ${OPENGL_LIBRARIES}
   Qt5::Widgets
+  Qt5::OpenGL
+  wsock32
+  rpcrt4
 )

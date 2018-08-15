@@ -1,18 +1,17 @@
 #include <qapplication.h>
 #include <qpushbutton.h>
-//#include "Lib/philips_lib.h"
+#include "philips_lib.h"
 #include <iostream>
 
 void showSeg3DWidget()
 {
-  //Seg3DLibrary::makeSeg3DWidget()->show();
-  std::cout << "Seg3D is coming soon!" << std::endl;
+  Seg3DLibrary::makeSeg3DWidget()->show();
 }
 
 int main(int argc, char *argv[])
 {
   QApplication app(argc, argv);
-  //auto Context = Seg3DLibrary::makeContext(&app);
+  auto Context = Seg3DLibrary::Context::makeContext(&app);
 
   // dummy application code
   QPushButton runSeg3DasWidget("Click to run Seg3D as a widget");
