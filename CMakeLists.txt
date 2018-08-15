@@ -67,7 +67,7 @@ ADD_EXECUTABLE(philips ${PHILIPS_MAIN_SRCS})
 #Add path to Seg3D lib file
 ###########################################
 
-SET(PHILIPS_LIB "C:/SgbinNoPyR/Seg3D/Main/Philips/Lib/Release/philips_lib.lib")
+SET(PHILIPS_LIB "C:/SgbinNoPyR/Seg3D/Main/Philips/Lib/Release/philips_lib_complete.lib")
 
 ###########################################
 #Required libraries
