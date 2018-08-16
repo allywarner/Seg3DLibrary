@@ -1,6 +1,6 @@
 #include <qapplication.h>
 #include <qpushbutton.h>
-#include "philips_lib.h"
+#include "Seg3D_lib.h"
 #include <iostream>
 
 void showSeg3DWidget()
