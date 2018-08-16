@@ -53,21 +53,21 @@ SET(Qt5_PATH "" CACHE PATH "Path to directory where Qt 5 is installed. Directory
 # Set Seg3D main sources
 ###########################################
 
-SET(PHILIPS_MAIN_SRCS
-  philips_main.cc
+SET(SEG3DLIB_MAIN_SRCS
+  Seg3DLib_example_main.cc
 )
 
 ###########################################
 # Build the Seg3D executable
 ###########################################
 
-ADD_EXECUTABLE(philips ${PHILIPS_MAIN_SRCS})
+ADD_EXECUTABLE(Seg3DLib ${SEG3DLIB_MAIN_SRCS})
 
 ###########################################
 #Add path to Seg3D lib file
 ###########################################
 
-SET(PHILIPS_LIB "C:/SgbinNoPyR/Seg3D/Main/Philips/Lib/Release/philips_lib_complete.lib")
+SET(SEG3D_LIB "C:/SgbinNoPyR/Seg3D/Main/Philips/Lib/Release/Seg3D_lib_complete.lib")
 
 ###########################################
 #Required libraries
@@ -75,8 +75,8 @@ SET(PHILIPS_LIB "C:/SgbinNoPyR/Seg3D/Main/Philips/Lib/Release/philips_lib_comple
 
 FIND_PACKAGE(OpenGL REQUIRED)
 
-TARGET_LINK_LIBRARIES(philips
-  ${PHILIPS_LIB}
+TARGET_LINK_LIBRARIES(Seg3DLib
+  ${SEG3D_LIB}
   ${OPENGL_LIBRARIES}
   Qt5::Widgets
   Qt5::OpenGL
