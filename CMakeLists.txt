@@ -67,7 +67,7 @@ ADD_EXECUTABLE(Seg3DLib ${SEG3DLIB_MAIN_SRCS})
 #Add path to Seg3D lib file
 ###########################################
 
-SET(SEG3D_LIB "C:/SgbinNoPyR/Seg3D/Main/Seg3DLib/Lib/Release/Seg3D_lib_complete.lib")
+SET(SEG3D_LIB "C:/SgbinLibR/Seg3D/Main/Seg3DLib/Lib/Release/Seg3D_lib_complete.lib")
 
 ###########################################
 #Required libraries
